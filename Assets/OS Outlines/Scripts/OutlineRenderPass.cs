@@ -117,6 +117,7 @@ public class OutlineRenderPass : ScriptableRendererFeature
     }
     public Settings settings = new Settings();
     CustomRenderPass m_ScriptablePass;
+    Outline outlineStackComponent;
 
     public override void Create()
     {
@@ -132,12 +133,17 @@ public class OutlineRenderPass : ScriptableRendererFeature
     // This method is called when setting up the renderer once per-camera.
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
     {
-        var stack = VolumeManager.instance.stack;
-        var outline = stack.GetComponent<Outline>();
-
-        if (outline.IsActive())
+        if(outlineStackComponent == null)
         {
-            m_ScriptablePass.AssignShaderVars(outline);
+            
+            Debug.Log("Ping");
+        }
+        var stack = VolumeManager.instance.stack;
+        outlineStackComponent = stack.GetComponent<Outline>();
+
+        if (outlineStackComponent.IsActive())
+        {
+            m_ScriptablePass.AssignShaderVars(outlineStackComponent);
             m_ScriptablePass.source = renderer.cameraColorTarget;
             renderer.EnqueuePass(m_ScriptablePass);
         }
