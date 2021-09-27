@@ -9,10 +9,13 @@ TEXTURE2D(_CameraDepthTexture);
 SAMPLER(sampler_CameraDepthTexture);
 
 
-void DrawOutline_float(float2 UV, Texture2D MaterialData, SamplerState MaterialSampler, float OutlineThickness, float DepthDetectionThreshold, float NormalDetectionThreshold, bool ObjectIDDetection, out float OutlineValue)
+void DrawOutline_float(float2 UV, Texture2D MaterialData, SamplerState MaterialSampler, float OutlineThickness, float DepthDetectionThreshold, float NormalDetectionThreshold, bool ObjectIDDetection, out float OutlineValue, out float DepthValue, out float3 NormalValue, out float MaterialID)
 {
 #if defined(SHADERGRAPH_PREVIEW)
 	OutlineValue = 0;
+	DepthValue = 0;
+	NormalValue = 0;
+	MaterialID = 0;
 #else
 	OutlineValue = 0;
 	
@@ -21,8 +24,11 @@ void DrawOutline_float(float2 UV, Texture2D MaterialData, SamplerState MaterialS
 	float2 texel_size = float2(_MainTex_TexelSize.x, _MainTex_TexelSize.y);
 
 	float material_self = MaterialData.SampleLevel(MaterialSampler, UV, 0).r;
+	MaterialID = material_self;
 	float depth_self = _CameraDepthTexture.SampleLevel(sampler_CameraDepthTexture, UV, 0).r;
+	DepthValue = depth_self;
 	float3 normal_self = _NormalsData.SampleLevel(MaterialSampler, UV, 0).rgb;
+	NormalValue = normal_self;
 	
 	float2 sample_positions[4];
 	sample_positions[0] = UV - float2(texel_size.x, texel_size.y) * half_scale_floor;
@@ -59,6 +65,7 @@ void DrawOutline_float(float2 UV, Texture2D MaterialData, SamplerState MaterialS
 	float edge = max(matValue, depthValue);
 	edge = max(edge, normalValue);
 	OutlineValue = edge;
+	
 	
 	#endif
 }

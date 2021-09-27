@@ -77,6 +77,10 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
+    - _OUTLINE_DEPTH_THRESHOLD: 0.552
+    - _OUTLINE_NORMAL_THRESHOLD: 0.161
+    - _OUTLINE_OBJECT_ID_DETECTION_ON: 1
+    - _OUTLINE_OPACITY: 1
     - _OcclusionStrength: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -89,7 +93,11 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_5EED15BB: {r: 1, g: 0, b: 0, a: 0}
+    - Color_B8EBE53B: {r: 0, g: 0, b: 0, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OUTLINE_COLOR: {r: 1, g: 1, b: 1, a: 0}
+    - _OUTLINE_OVERWRITE_BACKGROUND: {r: 0.9811321, g: 0.35635456, b: 0.35635456,
+        a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
