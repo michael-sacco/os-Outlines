@@ -10,7 +10,7 @@ public sealed class Outline : VolumeComponent, IPostProcessComponent
     public ClampedFloatParameter opacity = new ClampedFloatParameter(0f, 0f, 1f);
     public NoInterpColorParameter outlineColor = new NoInterpColorParameter(Color.clear, false);
     public NoInterpClampedFloatParameter normalDetectionThreshold = new NoInterpClampedFloatParameter(0.2f, 0f, 1f);
-    public NoInterpClampedFloatParameter depthDetectionThreshold = new NoInterpClampedFloatParameter(0.5f, 0f, 1f);
+    public NoInterpClampedFloatParameter depthDetectionThreshold = new NoInterpClampedFloatParameter(0.2f, 0f, 1f);
     public BoolParameter objectIDDetection = new BoolParameter(true);
     public ColorParameter overwriteColor = new ColorParameter(Color.white);
     public ClampedFloatParameter ovewriteOpacity = new ClampedFloatParameter(0f, 0f, 1f);

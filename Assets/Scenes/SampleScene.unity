@@ -279,10 +279,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 372040625}
-  - component: {fileID: 372040624}
   - component: {fileID: 372040623}
+  - component: {fileID: 372040624}
   m_Layer: 0
-  m_Name: Outline Sphere Volume 1 (1)
+  m_Name: Outline Sphere Volume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -326,7 +326,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372040622}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.076, y: 0.252, z: 3.757}
+  m_LocalPosition: {x: 6.076, y: 0.959, z: 3.757}
   m_LocalScale: {x: 3.8407, y: 3.8407, z: 3.8407}
   m_Children: []
   m_Father: {fileID: 0}
@@ -789,7 +789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be76e5f14cfee674cb30b491fb72b09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boost: 3.5
+  boost: 1
   positionLerpTime: 0.2
   mouseSensitivityCurve:
     serializedVersion: 2
