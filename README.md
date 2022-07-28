@@ -11,3 +11,21 @@
 
 3. Configure
 ![image](https://user-images.githubusercontent.com/81721502/134998321-c7fc4a98-3a4a-4fed-8691-e363ae5b2fa2.png)
+
+
+[Learn more about our Object Outlines shader, which allows you to outline individual meshes in your scene.](https://u3d.as/2MbT)
+
+
+Download more Top-Rated OccaSoftware Unity Assets
+
+-   [Altos - Volumetric Clouds, Skybox, Day Night Cycle, Sun, Moon, and Stars](https://u3d.as/2Q5g)
+-   [Buto - Volumetric Lighting & Fog](https://u3d.as/2Leg)
+-   [LSPP - Volumetric Lighting, God Rays, and Light Shafts](https://u3d.as/2M0p)
+
+Additional
+
+-   [Join the OccaSoftware Newsletter](https://www.occasoftware.com/newsletter). Be the first to know about new releases, sales, and receive exclusive Unity tips.
+-   [Learn more about OccaSoftware - The Best Assets for Unity](https://www.occasoftware.com/).
+-   Check out our [FAQs](https://www.occasoftware.com/newsletter).
+-   [Read the latest OccaSoftware News](https://www.occasoftware.com/news).
+-   [Watch our newest release videos and tutorials on Youtube](https://www.youtube.com/channel/UCHnL10IiNRf8kXHUMctOylw).
