@@ -12,7 +12,7 @@
 3. Configure
 ![image](https://user-images.githubusercontent.com/81721502/134998321-c7fc4a98-3a4a-4fed-8691-e363ae5b2fa2.png)
 
-
+[Learn more about OccaSoftware | Game Assets for Unity](https://www.occasoftware.com/about)
 [Learn more about our Object Outlines shader, which allows you to outline individual meshes in your scene.](https://u3d.as/2MbT)
 
 
